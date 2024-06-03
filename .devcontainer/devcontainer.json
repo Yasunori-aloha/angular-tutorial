@@ -10,7 +10,7 @@
 	"workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=cached",
 	"workspaceFolder": "/workspace",
 	"mounts": [
-		"source=angular-tutorial-node_modules,target=/workspace/node_modules,type=volume"
+		"source=angular-tutorial-node_modules,target=/workspace/first-app/node_modules,type=volume"
 	],
 	"customizations": {
 		"vscode": {

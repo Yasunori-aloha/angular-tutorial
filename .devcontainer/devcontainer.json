@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "angular-tutorial",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"runArgs": ["--name", "angular-tutorial"],
+	"workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
+	"mounts": [
+		"source=angular-tutorial-node_modules,target=/workspace/node_modules,type=volume"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"PKief.material-icon-theme",
+				"alefragnani.Bookmarks",
+				"eamodio.gitlens",
+				"bradgashler.htmltagwrap",
+				"oderwat.indent-rainbow",
+				"1natsu.insert-br-tag",
+				"ionutvmi.path-autocomplete",
+				"shardulm94.trailing-spaces",
+				"mosapride.zenkaku"
+			]
+		}
+	},
+}

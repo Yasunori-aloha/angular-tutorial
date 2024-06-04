@@ -23,8 +23,19 @@
 				"1natsu.insert-br-tag",
 				"ionutvmi.path-autocomplete",
 				"shardulm94.trailing-spaces",
-				"mosapride.zenkaku"
-			]
+				"mosapride.zenkaku",
+				"vincaslt.highlight-matching-tag",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode"
+			],
+			"settings": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true,
+				"eslint.format.enable": true,
+				"[typescriptreact]": {
+				  "editor.defaultFormatter": "esbenp.prettier-vscode"
+				}
+			}
 		}
 	},
 }

@@ -11,7 +11,8 @@
 	"workspaceFolder": "/workspace",
 	"mounts": [
 		"source=angular-tutorial-node_modules,target=/workspace/first-app/node_modules,type=volume",
-		"source=angular-tutorial-node_modules,target=/workspace/counter-app/node_modules,type=volume"
+		"source=angular-tutorial-node_modules,target=/workspace/counter-app/node_modules,type=volume",
+		"source=angular-tutorial-node_modules,target=/workspace/tour-of-heros/node_modules,type=volume"
 	],
 	"customizations": {
 		"vscode": {
@@ -27,7 +28,8 @@
 				"mosapride.zenkaku",
 				"vincaslt.highlight-matching-tag",
 				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"Angular.ng-template"
 			],
 			"settings": {
 				"editor.defaultFormatter": "esbenp.prettier-vscode",

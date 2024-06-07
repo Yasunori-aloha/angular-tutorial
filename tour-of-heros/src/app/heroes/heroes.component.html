@@ -1,3 +1,15 @@
+<div>
+  <label for="new-hero">Hero name: </label
+  ><input type="text" id="new-hero" #heroName />
+  <button
+    type="button"
+    class="add-button"
+    (click)="add(heroName.value); heroName.value = ''"
+  >
+    Add hero
+  </button>
+</div>
+
 <h2>My Heroes</h2>
 <ul class="heroes">
   @for (hero of heroes; track hero) {

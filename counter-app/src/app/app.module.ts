@@ -1,17 +1,11 @@
-import { NgModule, isDevMode } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { counterReducer } from './counter.reducer';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [
-    CommonModule,
-    StoreModule.forRoot({ count: counterReducer }),
-    isDevMode() ? StoreDevtoolsModule.instrument() : [],
-  ],
-  bootstrap: [AppComponent],
+  declarations: [],
+  imports: [BrowserModule, StoreModule.forRoot({ count: counterReducer })],
+  bootstrap: [],
 })
 export class AppModule {}
